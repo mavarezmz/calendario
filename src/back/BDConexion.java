@@ -18,7 +18,7 @@ public class BDConexion extends LeerProperties{
 			  try{
 				this.con = null;		
 			    Class.forName ("org.postgresql.Driver");
-			    this.con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ElProyecto", "postgres", "1234");
+			    this.con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/calendario", "postgres", "1234");
 			    //this.con = DriverManager.getConnection (leer.getProperty("url"), leer.getProperty("user"), leer.getProperty("password"));   
 			  } 
 			  catch (Exception e) {
